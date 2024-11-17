@@ -5,14 +5,11 @@
     box-sizing: border-box;
 }
 
-/* Plynulý přechod pro všechny odkazy */
-html {
-    scroll-behavior: smooth; /* Aktivuje plynulý přechod pro všechny odkazy */
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 /* Pevná lišta s menu */
@@ -23,6 +20,7 @@ header {
     background-color: #333;
     padding: 10px 20px;
     color: white;
+    width: 100%;
 }
 
 .navbar {
@@ -34,6 +32,7 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
+    margin: 0;
 }
 
 .nav-links li {
@@ -96,9 +95,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
     min-height: 100vh;
+    width: 100vw; /* Sekce zabírá celou šířku viewportu */
     gap: 20px;
+    overflow: hidden; /* Skryje jakýkoli obsah přesahující sekci */
 }
 
 .section:nth-child(odd) {
@@ -111,7 +111,6 @@ header {
 
 .content {
     display: flex;
-    max-width: 1200px;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
@@ -130,7 +129,6 @@ header {
 
 .image {
     flex: 1;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,14 +136,16 @@ header {
 
 .image img {
     width: 100%;
-    border-radius: 8px;
+    height: 100vh; /* Obrázek zabírá celou výšku viewportu */
+    object-fit: cover; /* Zachování proporcí */
+    border-radius: 0; /* Odebrání zaoblení okrajů */
 }
 
 /* Poslední oddíl */
 .last {
     text-align: center;
     background-color: #ccc;
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 h1, h2 {
@@ -182,7 +182,8 @@ h1, h2 {
     }
 
     .image img {
-        width: 100%;
+        height: auto; /* Na menších zařízeních umožněte obrázku přizpůsobit výšku obsahu */
+        max-height: 100vh; /* Omezte výšku na výšku viewportu */
     }
 
     /* Zajištění, že obrázky budou vždy pod textem */
@@ -196,6 +197,6 @@ h1, h2 {
 }
 
 /* Plynulý přechod pro všechny odkazy */
-.smooth-scroll {
-    scroll-behavior: smooth; /* Aktivuje plynulý přechod při kliknutí na odkazy */
+html {
+    scroll-behavior: smooth;
 }
