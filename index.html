@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta do Vídně</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Pevná lišta s menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Cesta do Vídně</div>
+            <ul class="nav-links">
+                <li><a href="#section-1">Cesta</a></li>
+                <li><a href="#section-2">Den 1</a></li>
+                <li><a href="#section-3">Den 2</a></li>
+                <li><a href="#section-4">Den 3</a></li>
+                <li><a href="#section-5">Tak co?</a></li>
+            </ul>
+
+            <!-- Ikona pro otevření mobilního menu -->
+            <div class="menu-icon" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobilní menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#section-1">Cesta</a></li>
+            <li><a href="#section-2">Den 1</a></li>
+            <li><a href="#section-3">Den 2</a></li>
+            <li><a href="#section-4">Den 3</a></li>
+            <li><a href="#section-5">Tak co?</a></li>
+        </ul>
+    </div>
+
+    <!-- Oddíly stránky -->
+    <section class="section" id="section-1">
+        <div class="content">
+            <div class="text">
+                <h1>Cesta do Vídně</h1>
+                <p><strong>Typ dopravy:</strong> Autobus</p>
+                <p><strong>Časy:</strong> Odjezd 6. 12. v 8:00, příjezd 6. 12. v 12:00</p>
+                <p><strong>Start:</strong> Praha</p>
+                <p><strong>Cíl:</strong> Vídeň</p>
+            </div>
+            <div class="image">
+                <img src="journey.jpg" alt="Cesta do Vídně">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section-2">
+        <div class="content">
+            <div class="image">
+                <img src="day1.jpg" alt="Den 1">
+            </div>
+            <div class="text">
+                <h2>Harmonogram 6. 12.</h2>
+                <ul>
+                    <li>8:00 - Odjezd z Prahy</li>
+                    <li>12:00 - Příjezd do Vídně</li>
+                    <li>13:00 - Oběd v centru</li>
+                    <li>15:00 - Návštěva vánočního trhu</li>
+                    <li>19:00 - Procházka vánočními ulicemi</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section-3">
+        <div class="content">
+            <div class="text">
+                <h2>Harmonogram 7. 12.</h2>
+                <ul>
+                    <li>9:00 - Snídaně v hotelu</li>
+                    <li>10:00 - Návštěva Krampusového průvodu</li>
+                    <li>14:00 - Prohlídka městských památek</li>
+                    <li>18:00 - Večeře v tradiční rakouské restauraci</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="day2.jpg" alt="Den 2">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section-4">
+        <div class="content">
+            <div class="image">
+                <img src="day3.jpg" alt="Den 3">
+            </div>
+            <div class="text">
+                <h2>Harmonogram 8. 12.</h2>
+                <ul>
+                    <li>8:00 - Snídaně v hotelu</li>
+                    <li>10:00 - Nákupy na vánočních trzích</li>
+                    <li>14:00 - Přípravy na odjezd</li>
+                    <li>16:00 - Odjezd zpět do Prahy</li>
+                    <li>20:00 - Příjezd do Prahy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section last" id="section-5">
+        <div class="content">
+            <div class="text">
+                <h1>Tak co, pojedeš?</h1>
+                <p>Už se těšíš na víkend plný zážitků ve Vídni?</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
